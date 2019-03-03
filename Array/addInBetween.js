@@ -1,6 +1,5 @@
-const arrayA = [2, 5];
-const arrayB = [11, 4];
-const arrayC = [3, 15];
+// Returns the sum of all numbers in-between two numbers passed as array elements.
+// Start and end numbers are also added to the sum.
 
 function addInBetween(arr) {
   let bigNum;
@@ -21,6 +20,8 @@ function addInBetween(arr) {
   return sum
 }
 
+const arrayA = [2, 5];
+const arrayB = [11, 4];
+
 console.log(addInBetween(arrayA));
 console.log(addInBetween(arrayB));
-console.log(addInBetween(arrayC));
