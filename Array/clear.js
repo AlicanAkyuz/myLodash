@@ -1,5 +1,4 @@
-const arrayA = [0, 1, 72, 36, 2, 3, 786, 4, 5, 6, 7, 8, 9, 10];
-const arrayB = [870, 760, 13, 15, 0, 24, 29282, 45];
+// Removes specified elements from array and returns the filtered array.
 
 function Clear(arr) {
   let itemsToRemove = [];
@@ -25,6 +24,9 @@ function Clear(arr) {
 
   return newArr;
 }
+
+const arrayA = [0, 1, 72, 36, 2, 3, 786, 4, 5, 6, 7, 8, 9, 10];
+const arrayB = [870, 760, 13, 15, 0, 24, 29282, 45];
 
 console.log(Clear(arrayA, 0, 3, 5, 7, 9));
 console.log(Clear(arrayB, 760, 870, 45));
