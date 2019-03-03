@@ -1,7 +1,5 @@
 // Recursively flattens array.
 
-const arrayA = [2, 3, [9, 8, [0, 10], 7], [4, [5, 6]]];
-
 function flattenDeep(arr) {
   let newArr = [];
   for (const item of arr) {
@@ -13,5 +11,7 @@ function flattenDeep(arr) {
   }
   return newArr
 }
+
+const arrayA = [2, 3, [9, 8, [0, 10], 7], [4, [5, 6]]];
 
 console.log(flattenDeep(arrayA));

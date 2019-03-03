@@ -1,8 +1,5 @@
 // Creates a slice of array with n elements dropped from the beginning.
 
-const arrayA = [1, 2, 3, 4, 5];
-const arrayB = ['sun', 'rain', 'snow', 'fog', 'mist'];
-
 function drop(arr, n) {
   const inputArr = arr.reverse();
   const newArr = [];
@@ -11,6 +8,9 @@ function drop(arr, n) {
   }
   return newArr.reverse()
 }
+
+const arrayA = [1, 2, 3, 4, 5];
+const arrayB = ['sun', 'rain', 'snow', 'fog', 'mist'];
 
 console.log(drop(arrayA, 2));
 console.log(drop(arrayB, 1));

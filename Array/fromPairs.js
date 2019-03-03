@@ -1,8 +1,5 @@
 // Takes in an array of pairs and returns an object composed from key-value pairs.
 
-const arrayA = [['a', 1], ['b', 2], ['c', 3]];
-const arrayB = [['a'], [2], ['c', 3]];
-
 function fromPairs(arr) {
   let returnVal = '';
   let obj = {};
@@ -16,6 +13,9 @@ function fromPairs(arr) {
   }
   return obj
 }
+
+const arrayA = [['a', 1], ['b', 2], ['c', 3]];
+const arrayB = [['a'], [2], ['c', 3]];
 
 console.log(fromPairs(arrayA));
 console.log(fromPairs(arrayB));

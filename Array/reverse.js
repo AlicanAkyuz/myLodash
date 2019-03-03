@@ -11,4 +11,5 @@ function Reverse(arr) {
 }
 
 const arrayA = [1, 2, 3, 4, 5, 8, 32, 70];
+
 console.log(Reverse(arrayA));

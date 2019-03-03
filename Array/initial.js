@@ -1,8 +1,5 @@
 // Gets all but the last element of array.
 
-const arrayA = ['a', 'b', 'c'];
-const arrayB = ['10', '9', '8'];
-
 function initial(arr) {
   let newArr = [];
   for (const item of arr) {
@@ -14,6 +11,9 @@ function initial(arr) {
   }
   return newArr
 }
+
+const arrayA = ['a', 'b', 'c'];
+const arrayB = ['10', '9', '8'];
 
 console.log(initial(arrayA));
 console.log(initial(arrayB));

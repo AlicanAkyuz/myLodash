@@ -1,9 +1,5 @@
 // Gets the first element of array.
 
-const arrayA = [1, 2, 3, 4, 5];
-const arrayB = [];
-const string = "this is a string";
-
 function head(arr) {
   let returnVal;
   if (arr.length === 0) {
@@ -15,6 +11,10 @@ function head(arr) {
   }
   return returnVal
 }
+
+const arrayA = [1, 2, 3, 4, 5];
+const arrayB = [];
+const string = "this is a string";
 
 console.log(head(arrayA));
 console.log(head(arrayB));

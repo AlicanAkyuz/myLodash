@@ -1,11 +1,6 @@
 // Creates an array of array values not included in the other given array.
 // The order and references of result values are determined by the first array.
 
-const arrayA = [1, 2, 3, 4, 5];
-const arrayB = [2, 3, 4];
-const arrayC = ['a', 'b', 'c', 'd'];
-const arrayD = ['b', 'd'];
-
 function differance(arr, ex) {
   for (let i = 0; i < arr.length; i++) {
     for (const item of ex) {
@@ -16,6 +11,11 @@ function differance(arr, ex) {
   }
   return arr
 }
+
+const arrayA = [1, 2, 3, 4, 5];
+const arrayB = [2, 3, 4];
+const arrayC = ['a', 'b', 'c', 'd'];
+const arrayD = ['b', 'd'];
 
 console.log(differance(arrayA, arrayB));
 console.log(differance(arrayC, arrayD));
