@@ -1,3 +1,5 @@
+// Converts all elements in array into a string separated by separator.
+
 const arrayA = [1, 2, 3, 4];
 const arrayB = [5, 'a', 'b', 6];
 const seperatorA = '*';

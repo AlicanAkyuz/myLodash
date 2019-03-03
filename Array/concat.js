@@ -1,4 +1,6 @@
-const myArray = [1, 2];
+// Creates a new array concatenating array with any additional arrays and/or values.
+
+const arrayA = [1, 2];
 
 function concat(arg) {
   const newArr = [];
@@ -14,4 +16,4 @@ function concat(arg) {
   return newArr
 }
 
-console.log(concat(myArray, 'concat_me', 3));
+console.log(concat(arrayA, 'concat_me', 3));

@@ -1,4 +1,6 @@
-const myArray = [0, 1, 2, [3, 4], [5, [6, 7]]];
+// Flattens array a single level deep.
+
+const arrayA = [0, 1, 2, [3, 4], [5, [6, 7]]];
 
 function flatten(arr) {
   let newArr = [];
@@ -14,4 +16,4 @@ function flatten(arr) {
   return newArr
 }
 
-console.log(flatten(myArray));
+console.log(flatten(arrayA));

@@ -1,3 +1,5 @@
+// Gets the first element of array.
+
 const arrayA = [1, 2, 3, 4, 5];
 const arrayB = [];
 const string = "this is a string";

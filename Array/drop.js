@@ -1,3 +1,5 @@
+// Creates a slice of array with n elements dropped from the beginning.
+
 const arrayA = [1, 2, 3, 4, 5];
 const arrayB = ['sun', 'rain', 'snow', 'fog', 'mist'];
 

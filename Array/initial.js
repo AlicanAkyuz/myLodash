@@ -1,3 +1,5 @@
+// Gets all but the last element of array.
+
 const arrayA = ['a', 'b', 'c'];
 const arrayB = ['10', '9', '8'];
 
