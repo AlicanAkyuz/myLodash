@@ -5,7 +5,6 @@ function intersection() {
   let newArr = [...arguments];
   let firstArr = [...newArr[0]];
   let storeArr = [];
-
   for (let i = 1; i < newArr.length; i++) {
     firstArr.forEach(e => {
       for (let y = 0; y < newArr[i].length; y++) {
@@ -15,7 +14,6 @@ function intersection() {
       }
     })
   };
-
   return [...new Set(storeArr)]
 }
 
