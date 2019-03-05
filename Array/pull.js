@@ -2,14 +2,22 @@
 
 function pull(arr) {
   let argArr = [...arguments];
-  for (let i = 1; i < argArr.length; i++) {
-    arr.forEach(e => {
-      if (e === argArr[i]) {
-        arr.splice(arr.indexOf(e), 1)
-      }
-    })
+  let values = [];
+  let newArr = [];
+
+  argArr.forEach(e => {
+    if (argArr.indexOf(e) > 0) {
+      values.push(e)
+    }
+  })
+
+  for (let i = 0; i < arr.length; i++) {
+    if (!values.includes(arr[i])) {
+      newArr.push(arr[i])
+    }
   }
-  return arr
+
+  return newArr
 }
 
 const arrayA = ['a', 'b', 'c', 'a', 'b', 'c'];
