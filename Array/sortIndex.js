@@ -6,6 +6,7 @@ function sortIndex(arr, num) {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] > num) {
         return i
+        break
       }
     }
   } else {
@@ -17,8 +18,9 @@ function sortIndex(arr, num) {
   }
 }
 
-const arrayA = [6, 8, 9, 10];
+const arrayA = [6, 6, 8, 8, 9, 10];
 
 console.log(sortIndex(arrayA, 5))
+console.log(sortIndex(arrayA, 6))
 console.log(sortIndex(arrayA, 7))
 console.log(sortIndex(arrayA, 15))
