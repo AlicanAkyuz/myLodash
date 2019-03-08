@@ -1,7 +1,7 @@
 // Uses a binary search to determine the lowest index at which value should be inserted into array
 // in order to maintain its sort order.
 
-function sortIndex(arr, num) {
+function sortedIndex(arr, num) {
   if (num < arr[arr.length - 1] && num > arr[0]) {
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] > num) {
@@ -20,7 +20,7 @@ function sortIndex(arr, num) {
 
 const arrayA = [6, 6, 8, 8, 9, 10];
 
-console.log(sortIndex(arrayA, 5))
-console.log(sortIndex(arrayA, 6))
-console.log(sortIndex(arrayA, 7))
-console.log(sortIndex(arrayA, 15))
+console.log(sortedIndex(arrayA, 5))
+console.log(sortedIndex(arrayA, 6))
+console.log(sortedIndex(arrayA, 7))
+console.log(sortedIndex(arrayA, 15))
