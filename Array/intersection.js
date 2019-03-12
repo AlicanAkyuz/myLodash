@@ -18,5 +18,6 @@ const arrayA = [1, 13, 3, 'e', 28, 'h'];
 const arrayB = ['h', 5, 'e', 28, 15, 4, 13];
 const arrayC = [6, 'h', 15, 7, 13, 'e', 72, 16];
 const arrayD = ['e', 15, 8, 13, 9, 'h'];
+const arrayE = [77, 109, 'e', 27, 15];
 
-console.log(intersection(arrayA, arrayB, arrayC, arrayD));
+console.log(intersection(arrayA, arrayB, arrayC, arrayD, arrayE));
