@@ -1,8 +1,13 @@
-// Converts string to camel case, removing special characters.
+// Converts string to kebab case, removing special characters.
 
-function camelCase(str) {
+function kebabCase(str) {
   let words = str.split(' ');
+  let characters = [];
   let newArr = [];
+
+  for (let x = 0; x < words.length; x++) {
+    characters.push(words[x].split(''));
+  }
 
   words.forEach(e => {
     if (words.indexOf(e) === 0) {
@@ -33,6 +38,6 @@ const stringA = "Dogs barking///";
 const stringB = "meow ***cat";
 const stringC = "--SUN CARE--!-";
 
-console.log(camelCase(stringA));
-console.log(camelCase(stringB));
-console.log(camelCase(stringC));
+console.log(kebabCase(stringA));
+console.log(kebabCase(stringB));
+console.log(kebabCase(stringC));
