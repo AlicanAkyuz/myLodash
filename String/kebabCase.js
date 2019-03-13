@@ -1,4 +1,4 @@
-// Converts string to kebab case, removing special characters.
+// Converts string to kebab-case, removing special characters.
 
 function kebabCase(str) {
   let arr = [];

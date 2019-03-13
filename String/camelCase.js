@@ -1,4 +1,4 @@
-// Converts string to camel case, removing special characters.
+// Converts string to camelCase, removing special characters.
 
 function camelCase(str) {
   let words = str.split(' ');
