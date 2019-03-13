@@ -1,32 +1,17 @@
 // Converts string to kebab case, removing special characters.
 
 function kebabCase(str) {
-  let words = str.split(' ');
   let newArr = [];
 
-  words.forEach(e => {
-    if (words.indexOf(e) === 0) {
-      let cleanWord = [];
-      for (let y = 0; y < e.length; y++) {
-        if(/^[A-Za-z]+$/.test(e[y])) {
-          cleanWord.push(e[y])
-        }
+  str.split('').forEach(e => {
+    for (let i = 0; i < e.length; i++) {
+      if(/^[A-Za-z ]+$/.test(e[i])) {
+        newArr.push(e[i].toLowerCase());
       }
-      newArr.push(cleanWord.join('').toLowerCase());
-    } else {
-      let otherWords = e.split('');
-      let otherWordsCleaned = [];
-      for (let z = 0; z < otherWords.length; z++) {
-        if(/^[A-Za-z]+$/.test(otherWords[z])) {
-          otherWordsCleaned.push(otherWords[z])
-        }
-      }
-      newArr.push(otherWordsCleaned.shift().toUpperCase());
-      otherWordsCleaned.forEach(i => newArr.push(i.toLowerCase()))
     }
   });
 
-  return newArr.join('')
+  return newArr.join('').replace(' ', '-')
 }
 
 const stringA = "Dogs barking///";
