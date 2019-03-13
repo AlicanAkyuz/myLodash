@@ -2,12 +2,7 @@
 
 function kebabCase(str) {
   let words = str.split(' ');
-  let characters = [];
   let newArr = [];
-
-  for (let x = 0; x < words.length; x++) {
-    characters.push(words[x].split(''));
-  }
 
   words.forEach(e => {
     if (words.indexOf(e) === 0) {
