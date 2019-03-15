@@ -12,8 +12,13 @@ function replace(str, pattern, replacement) {
   return strArr.join(' ')
 }
 
-const strA = 'hello dear dog';
-const patternStr = 'dog';
-const replacementStr = 'cat';
+const strA = 'hello, dear dog';
+const patternStrA = 'dog';
+const replacementStrA = 'cat';
+console.log(replace(strA, patternStrA, replacementStrA));
 
-console.log(replace(strA, patternStr, replacementStr));
+
+const strB = 'hello, dear butterfly';
+const patternStrB = 'dear';
+const replacementStrB = 'little';
+console.log(replace(strB, patternStrB, replacementStrB));
