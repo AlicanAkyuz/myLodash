@@ -2,21 +2,21 @@
 // Padding characters are truncated if they can't be evenly divided by length.
 // If no padding character provided, the string is padded with spaces.
 
-function pad(str, length, padding) {
+function pad(str, length, char) {
   let strArr = str.split('');
-  let addS = '';
-  padding === undefined ? addS = ' ' : addS = padding;
+  let charToAdd = '';
+  char === undefined ? charToAdd = ' ' : charToAdd = char;
 
   if (strArr.length === length) {
     return str
   } else if (strArr.length < length -1) {
-    strArr.unshift(addS);
+    strArr.unshift(charToAdd);
     if (strArr.length !== length) {
-      strArr.push(addS)
+      strArr.push(charToAdd)
     }
-    return pad(strArr.join(''), length, addS)
+    return pad(strArr.join(''), length, charToAdd)
   } else {
-    strArr.push(addS[0]);
+    strArr.push(charToAdd[0]);
     return strArr.join('')
   }
 }
