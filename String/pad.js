@@ -25,4 +25,4 @@ const strA = 'abc';
 console.log(pad(strA, 3));
 console.log(pad(strA, 5));
 console.log(pad(strA, 7, '**'));
-console.log(pad(strA, 10, '-_'));
+console.log(pad(strA, 10, '-_)'));
