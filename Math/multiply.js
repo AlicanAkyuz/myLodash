@@ -1,10 +1,10 @@
 // Multiplies two numbers.
 
-function multiply (num1, num2) {
-  if (num1 === undefined || num2 === undefined) {
+function multiply (multiplier, multiplicand) {
+  if (multiplier === undefined || multiplicand === undefined) {
     return 'multiply expects 2 numbers as arguments'
   } else {
-    return num1 * num2
+    return multiplier * multiplicand
   }
 }
 
